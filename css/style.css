@@ -1,0 +1,650 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /*transition: .5s ease-in-out;*/
+}
+
+body {
+    background: #141515;
+    font-family: "Montserrat", sans-serif;
+}
+
+img {
+    max-height: 100%;
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+
+.header-menu {
+    width: 90%;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+
+.logo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.img-logo {
+    width: 100%;
+    max-height: 100%;
+}
+
+.bg-gum {
+    display: block;
+    width: 100%;
+    /*background-image: url("../img/mobile/gym.png");*/
+    background-image: url("../img/mobile/9 1.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 113vw;
+
+}
+
+.gum-btn {
+
+    padding-top: 10%;
+    padding-left: 5%;
+}
+
+.title {
+    font-family: Montserrat, sans-serif;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    background-color: black;
+    width: 70%;
+    color: white;
+    text-transform: uppercase;
+    display: block;
+    padding: 10%;
+}
+
+.btn button {
+    cursor: pointer;
+    background-color: #000000;
+    color: white;
+    border: none;
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    width: 35%;
+
+    margin-top: 14px;
+    margin-left: 20%;
+    outline : none;
+    padding: 2%;
+}
+
+.hamburger {
+    --thickness: 1px;
+    display: inline-block;
+    border: none;
+    background: transparent;
+    padding: 0 5px;
+    line-height: 66px;
+    cursor: pointer;
+}
+
+.hamburger span {
+    position: relative;
+    vertical-align: middle;
+}
+
+.hamburger span,
+.hamburger span::after,
+.hamburger span::before {
+    display: inline-block;
+    width: 25px;
+    height: var(--thickness);
+    background: #F38A03;
+}
+
+.hamburger span::after,
+.hamburger span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+}
+
+.hamburger span::before {
+    top: -7px;
+}
+
+.hamburger span::after {
+    bottom: -7px;
+}
+
+.navigation {
+    display: none;
+}
+.navigation-block {
+    display: block;
+    position: absolute;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 40px;
+    background: #141515;
+    right: 0;
+    left: 0;
+    text-align: center;
+    opacity: 0.9;
+
+}
+#menu a {
+text-decoration: none;
+    color: #FFFFFF;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.topMenuBar{
+    position: absolute;
+    top:0; width: 100%;
+    display: none;
+    z-index: 998;
+}
+.topMenuBar ul{
+    width: 100%;
+    dispay:flex;
+    flex-direction: column;
+}
+.topMenuBar ul li {
+    width: 50%;
+    margin: 0 auto;
+}
+.showMenu {display:block !important;}
+
+
+
+
+
+
+.kub {
+    margin: 0 0 0 auto;
+    width: 70%;
+    height: 64px;
+    background: #ED1260;
+}
+
+.main-txt {
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 10%;
+}
+
+.mai-text-centre {
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.fitness {
+    display: flex;
+}
+
+.fitness-box2 {
+    display: flex;
+}
+
+
+.section-text {
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 5%;
+}
+
+.map {
+    border: 5px solid #ED1260;
+    max-width: 93%;
+    margin: 0 auto;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2%;
+}
+
+.map-text {
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    padding-bottom: 1%;
+}
+
+#marker {
+    color: #ED1260;
+    position: absolute;
+    margin-top: -24%;
+    margin-left: 48%;
+}
+
+
+.icon {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding-top: 11%;
+    padding-bottom: 11%;
+}
+
+.products li {
+    width: calc(100% / 2);
+}
+
+
+.section1 {
+
+}
+
+.img-icon-center {
+    text-align: center;
+}
+
+.icon-img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.icon-img-1 {
+    margin-top: 11px;
+}
+
+.icon-img-2 {
+    margin-top: 13px;
+}
+
+.footer {
+    border: 5px solid #F38A03;
+    text-align: center;
+    color: #FFFFFF;
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+}
+.text-block {
+    display: none;
+}
+.footer-section {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+
+.contacts {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    /*padding: 4vh;*/
+    text-transform: uppercase;
+    padding: 10%;
+}
+
+i {
+    color: #F38A03;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.icon-cont {
+    padding: 1vh;
+    display: flex;
+    justify-content: center;
+}
+
+.icon-cont {
+    line-height: 22px;
+}
+
+.marker-envelope {
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+.marker {
+    padding: 10px 22px;
+}
+
+.marker-map {
+    margin-right: 10%;
+}
+
+.marker-phone {
+    margin-right: 3%;
+}
+
+
+#menu.active {
+    max-height: 123px;
+}
+
+@media (min-width: 768px) {
+
+    .header-menu {
+        display: flex;
+        width: 95%;
+    }
+    .products li {
+        width: calc(100% / 3 - 20px - 20px - 2px);
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+    .navigation a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    #menu li {
+        display: inline-block;
+        margin-right: 50px;
+    }
+    #menu {
+        padding-top: 5%;
+    }
+
+    .bg-gum {
+
+        background-image: url("../img/mobile/9 1.png");
+        max-width: 100%;
+        height: 513px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+    .map {
+        max-width: 45%;
+    }
+    .map-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+    .main-txt {
+        font-family: Montserrat, sans-serif;
+        font-size: 16px;
+        line-height: 20px;
+        color: #FFFFFF;
+        width: 85%;
+        margin: 0 auto;
+        padding-top: 7%;
+    }
+    .products {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding-top: 6%;
+        padding-bottom: 7%;
+        justify-content: center;
+    }
+    .title{
+        width: 35%;
+        padding: 5%;
+    }
+    .btn button {
+        margin-left: 9%;
+        width: 16%;
+        font-size: 22px;
+        line-height: 27px;
+        padding: 1%;
+
+    }
+    .kub {
+        margin: 0 6px 0 auto;
+        width: 70%;
+        height: 64px;
+        background: #ED1260;
+    }
+    .footer {
+        border: none;
+        margin-top: 7%;
+    }
+    .contacts {
+        font-size: 30px;
+        line-height: 35px;
+        text-align: left;
+        padding: 2%;
+    }
+    .footer-section {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .icon-marker{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon-cont {
+        display: block;
+        line-height: 30px;
+    }
+    .marker-map {
+        margin: 0;
+    }
+    .marker-phone {
+        margin: 0;
+    }
+    .marker {
+        margin: 0;
+        padding: 2%;
+
+    }
+    .marker-envelope {
+        padding: 2%;
+    }
+    .text-block{
+        display: block;
+    }
+    #marker {
+        margin-left: 23%;
+        margin-top: -12%;
+    }
+
+}
+
+
+@media (min-width: 1280px) {
+
+
+    .products li {
+        width: calc(100% / 3 - 20px - 20px - 2px);
+    }
+
+    #menu {
+        padding-top: 2%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+
+    }
+    .navigation a {
+        text-decoration: none;
+        color: #FFFFFF;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .bg-gum {
+        background-image: url("../img/mobile/9 1.png");
+        max-width: 80%;
+        height: 513px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+    }
+
+    img {
+        padding: 0;
+    }
+
+    .header-menu {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .kub {
+        display: none;
+    }
+    .main-txt {
+        padding-top: 3%;
+    }
+    .products {
+        padding-top: 4%;
+        justify-content: center;
+        padding-bottom: 4%;
+    }
+    .icon-img-1 {
+        margin-bottom: 72px;
+    }
+    .section-text {
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .main-txt {
+        font-size: 25px;
+        line-height: 30px;
+        width: 75%;
+
+    }
+    .map {
+        max-width: 45%;
+    }
+    .map-text {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .footer {
+        border: none;
+        margin-top: 7%;
+    }
+    .contacts {
+        font-size: 45px;
+        line-height: 55px;
+        text-align: left;
+        padding: 0 0 75px 0
+    }
+    .footer-section {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .icon-marker{
+        display: flex;
+        justify-content: space-between;
+    }
+    .icon-cont {
+        display: block;
+        line-height: 30px;
+    }
+    .marker-map {
+        margin: 0;
+    }
+    .marker-phone {
+        margin: 0;
+    }
+    .marker {
+        margin: 0;
+        padding: 0 0 32px 0;
+
+    }
+    .marker-envelope {
+        padding-bottom: 32px;
+    }
+    .text-block{
+        display: block;
+    }
+    .title{
+        width: 35%;
+        padding: 5%;
+    }
+    .btn button {
+        margin-left: 9%;
+        width: 16%;
+        font-size: 22px;
+        line-height: 27px;
+        padding: 1%;
+
+    }
+    .kub-block {
+        width: 7.5%;
+        height: 347px;
+        background-color: #ED1260;
+        position: absolute;
+        top: 3.9em;
+        right: 2.99%;
+    }
+    .header-menu{
+        width: 100%;
+    }
+    .img-logo {
+        width: 100%;
+        max-height: 100%;
+
+        margin-left: 94%;
+        margin-bottom: 14%;
+    }
+    h1 {
+        font-size: 32px;
+        line-height: 39px;
+        text-align: center;
+    }
+    #marker {
+        margin-left: 23.5%;
+        margin-top: -11.5%;
+    }
+}
+
+

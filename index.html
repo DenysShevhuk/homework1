@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Energym</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet"/>
+    <script src="https://use.fontawesome.com/fd8e7d9952.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+</head>
+<header>
+    <div class="header-menu">
+        <div class="logo">
+            <a href="#"><img class="img-logo" src="img/header/logo.svg" alt="logo"></a>
+            <div class="hamburger"><a class="hamburger"><span></span> </a></div>
+        </div>
+        <nav class="navigation">
+            <ul id="menu" style="display: block">
+                <li class="menu-li"><a href="#" class="main-menu">Home</a></li>
+                <li class="menu-li"><a href="#" class="main-menu">Business</a></li>
+                <li class="menu-li"><a href="#" class="main-menu">Contacts</a></li>
+                <li class="menu-li"><a href="#" class="main-menu">Ru|Eng</a></li>
+            </ul>
+        </nav>
+    </div>
+
+</header>
+<div class="kub-block"></div>
+<section class="bg-gum">
+    <div class="kub-block"></div>
+    <div class="gum-btn">
+        <div class="title"><h1> energy gym </h1></div>
+        <div class="btn">
+            <button>Website</button>
+        </div>
+    </div>
+
+</section>
+
+<section>
+    <div class="kub-block"></div>
+    <div class="kub">
+    </div>
+</section>
+<div class="mai-text-centre">
+    <p class="main-txt">
+        6 000 sq.m. of comfortable fitness with amazing view of the right bank of Kiev, the Lavra and the Dnieper.
+    </p>
+</div>
+
+<section class="icon">
+    <ul class="products">
+        <li class="icon-img">
+            <div class="icon-img">
+                <img class="img-icon-center" src="img/mobile/dumbbells%201.png">
+                <div class="section-text"><a>fitness center group training hall</a></div>
+            </div>
+        </li>
+        <li class="icon-img-1">
+            <div class="icon-img">
+                <img src="img/mobile/treadmill%201.png">
+                <div class="section-text"><a>cardio theater</a></div>
+            </div>
+        </li>
+        <li class="icon-img">
+            <div class="icon-img">
+                <img src="img/mobile/swimming-pool%201.png">
+                <div class="section-text"><a>professional sports pool 25х15 m with 6 swim lanes и 2 wading pools</a>
+                </div>
+            </div>
+        </li>
+        <li class="icon-img-2">
+            <div class="icon-img">
+                <img src="img/mobile/Group.png">
+                <div class="section-text"><a>children’s club EnerKid 500 q.m.</a></div>
+            </div>
+        </li>
+        <li class="icon-img">
+            <div class="icon-img">
+                <img src="img/mobile/juice%201.png">
+                <div class="section-text"><a>fitness bar</a></div>
+            </div>
+        </li>
+        <li class="icon-img-1">
+            <div class="icon-img">
+                <img src="img/mobile/boxing-gloves%201.png">
+                <div class="section-text"><a>fight Club</a></div>
+            </div>
+        </li>
+    </ul>
+</section>
+
+<section>
+    <div class="map">
+        <img src="img/mobile/image%203.png">
+
+        <div> <i class="fa fa-map-marker" id="marker" aria-hidden="true"></i></div>
+        <p class="map-text"> 1 Pavla Tychyny Ave, Kiev, Ukraine</p>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <div class="footer-section">
+        <div>
+            <h2 class="contacts"> Contacts</h2>
+        </div>
+        <div class="icon-marker">
+            <div class="icon-cont">
+                <div class="marker-envelope"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+                <div class="text-block"><a>email</a></div>
+                <a>info@unicorn.com</a>
+            </div>
+            <div class="icon-cont">
+                <div class="marker"><i class="fa fa-phone" aria-hidden="true"></i></div>
+                <div class="marker-phone">
+                    <div class="text-block"><a> call </a></div>
+                    <div><a>+38050 777 00 00 </a></div>
+                    <div><a>+38050 777 00 00</a></div>
+                </div>
+            </div>
+            <div class="icon-cont">
+                <div class="marker"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                <div class="marker-map">
+                    <div class="text-block"><a> location </a></div>
+                    <div><a>Kiev, Ukraine</a></div>
+                    <div><a>Minsk, Belarus </a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</footer>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".hamburger").click(function(){
+            $(".navigation").toggleClass("navigation-block"); return false;
+        });
+    });
+
+    //
+    // $(document).click( function(e){
+    //     if ( $(e.target).closest('.navigation-block').length ) {
+    //         return;
+    //     }
+    //     $('.navigation-block').fadeOut(); return false ;
+    // });
+
+
+</script>
+</body>
+</html>
